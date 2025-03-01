@@ -32,7 +32,4 @@ Sapo 3 pulou 1 metros e percorreu 1 metros
 Sapo 4 pulou 5 metros e percorreu 5 metros
 ...
 Sapo 4 é o vencedor!
-
-Este `README.md` fornece uma visão geral do projeto, instruções sobre como executá-lo, uma explicação do funcionamento e um exemplo de saída.
-Este `README.md` fornece uma visão geral do projeto, instruções sobre como executá-lo, uma explicação do funcionamento e um exemplo de saída.
 ```
