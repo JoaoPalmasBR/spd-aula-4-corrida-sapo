@@ -52,3 +52,6 @@ def corrida():
 
 if __name__ == "__main__":
     corrida()
+
+
+#link https://github.com/JoaoPalmasBR/spd-aula-4-corrida-sapo
