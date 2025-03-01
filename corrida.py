@@ -13,7 +13,7 @@ class Sapo(threading.Thread):
         self.velocidade = random.uniform(0.5, 2.0)  # Define a velocidade como um número aleatório entre 0.5 e 2.0 segundos
 
     def run(self):
-        while self.posicao < 100:
+        while self.posicao < 50:  # Altera a distância da corrida para 50 metros
             self.pulo = random.randint(1, 5)
             self.posicao += self.pulo
             self.pulos += 1
