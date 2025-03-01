@@ -12,7 +12,7 @@ class Sapo(threading.Thread):
         self.pulo = 0
         self.velocidade = random.uniform(0.5, 2.0)  # Define a velocidade como um número aleatório entre 0.5 e 2.0 segundos
 
-    def anda(self):
+    def run(self):
         while self.posicao < 100:
             self.pulo = random.randint(1, 5)
             self.posicao += self.pulo
@@ -21,4 +21,11 @@ class Sapo(threading.Thread):
             time.sleep(self.velocidade)  # Usa a velocidade para determinar o tempo de espera entre os pulos
 
 def corrida():
-    for i in range(10):
+    sapos = [Sapo(i) for i in range(10)]
+    for sapo in sapos:
+        sapo.start()
+    for sapo in sapos:
+        sapo.join()
+
+if __name__ == "__main__":
+    corrida()
